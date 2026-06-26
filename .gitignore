@@ -1,0 +1,99 @@
+# ==========================
+# Flutter / Dart
+# ==========================
+
+# Generated Dart files
+.dart_tool/
+.packages
+.pub/
+build/
+
+# Dependency lockfiles
+# Keep pubspec.lock for apps, ignore it for packages.
+# pubspec.lock
+
+# Flutter-specific
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+
+# Generated plugin registrant
+lib/generated_plugin_registrant.dart
+
+# ==========================
+# Android
+# ==========================
+
+**/android/.gradle/
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+
+# ==========================
+# iOS
+# ==========================
+
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral/
+**/ios/Pods/
+**/ios/.symlinks/
+
+# Xcode
+**/ios/Runner.xcworkspace/
+**/ios/xcuserdata/
+**/ios/*.xcuserstate
+
+# ==========================
+# macOS
+# ==========================
+
+**/macos/Pods/
+**/macos/.symlinks/
+**/macos/Flutter/ephemeral/
+
+# ==========================
+# Linux / Windows generated files
+# ==========================
+
+**/linux/flutter/ephemeral/
+**/windows/flutter/ephemeral/
+
+# ==========================
+# IDEs
+# ==========================
+
+.idea/
+.vscode/
+
+# If you share VS Code settings with the team,
+# ignore only machine-specific files instead:
+# .vscode/*
+# !.vscode/settings.json
+# !.vscode/extensions.json
+
+*.iml
+
+# ==========================
+# OS files
+# ==========================
+
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Secrets and environment files
+# ==========================
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+secrets.json
