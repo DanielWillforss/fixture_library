@@ -17,6 +17,15 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "12.1.0"
+  app_core:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: main
+      resolved-ref: c349761af21fdc4f9e262404ba6fea79aa559429
+      url: "https://github.com/DanielWillforss/app_core.git"
+    source: git
+    version: "1.0.0"
   args:
     dependency: transitive
     description:

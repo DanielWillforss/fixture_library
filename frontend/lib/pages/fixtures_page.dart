@@ -1,10 +1,10 @@
+import 'package:app_core/models/fixture.dart';
 import 'package:flutter/material.dart';
-import 'package:lights_app/models/fixture_model.dart';
 import 'package:lights_app/pages/base_info_page.dart';
 import 'package:lights_app/pages/fixture_page.dart';
-import 'package:lights_app/util/pop_ups.dart';
-import 'package:lights_app/services/basic_api.dart';
-import 'package:lights_app/services/fixtures_api.dart';
+import 'package:lights_app/widgets/pop_ups.dart';
+import 'package:lights_app/api/basic_api.dart';
+import 'package:lights_app/api/fixtures_api.dart';
 
 class FixturesPage extends StatefulWidget {
   const FixturesPage({super.key});

@@ -4,6 +4,26 @@
 // import 'package:test/test.dart';
 // import '../test_util.dart';
 
+// setUp(() async {
+//   Database.init(Endpoint(
+//     host: 'localhost',
+//     port: 5432,
+//     database: 'test_db',
+//     username: 'admin',
+//     password: 'admin',
+//   ), testMode: true);
+//   await Database.instance.begin();
+// });
+
+// tearDown(() async {
+//   await Database.instance.rollback();
+// });
+
+
+
+
+
+
 // void main() {
 //   final db = TestDatabaseConnection.instance;
 

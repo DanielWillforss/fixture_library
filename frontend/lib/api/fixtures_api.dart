@@ -1,21 +1,20 @@
 import 'dart:convert';
 
+import 'package:app_core/models/fixture.dart';
 import 'package:http/http.dart' as http;
 import 'package:lights_app/main.dart';
-import 'package:lights_app/models/fixture_model.dart';
 
 class FixturesApi {
   static const String baseUrl = GlobalConstants.baseUrl;
 
   static Future<List<Fixture>> getAllFixtures() async {
-    print('$baseUrl/fixtures/');
     final response = await http.get(Uri.parse('$baseUrl/fixtures/'));
     if (response.statusCode != 200) {
       throw Exception('Failed to load fixtures');
     }
 
     final List data = jsonDecode(response.body);
-    final r = data.map((e) => Fixture.fromMap(e)).toList();
+    final r = data.map((e) => Fixture.fromJson(e)).toList();
     return r;
   }
 

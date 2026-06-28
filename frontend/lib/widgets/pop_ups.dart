@@ -1,8 +1,8 @@
+import 'package:app_core/models/channel.dart';
+import 'package:app_core/models/fixture.dart';
+import 'package:app_core/models/mode.dart';
 import 'package:flutter/material.dart';
-import 'package:lights_app/models/channel_model.dart';
-import 'package:lights_app/models/fixture_model.dart';
-import 'package:lights_app/models/mode_model.dart';
-import 'package:lights_app/services/fixtures_api.dart';
+import 'package:lights_app/api/fixtures_api.dart';
 
 class PopUps {
   static Future<bool?> fixturePopup({

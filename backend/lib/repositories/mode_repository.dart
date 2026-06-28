@@ -1,10 +1,9 @@
-import 'package:lightsapp_backend/database/database.dart';
-import 'package:lightsapp_backend/database/database_connection.dart';
+import 'package:app_core/database/database.dart';
 import 'package:postgres/postgres.dart';
 
 class ModeRepository {
   final Database db;
-  ModeRepository({Database? db}) : db = db ?? DatabaseConnection();
+  ModeRepository() : db = Database.instance;
 
   // mode
   Future<int> createMode(int fixtureId, String name, int channelCount) async {

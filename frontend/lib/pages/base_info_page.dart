@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lights_app/services/basic_api.dart';
+import 'package:lights_app/api/basic_api.dart';
 
 class BaseInfoPage extends StatefulWidget {
   const BaseInfoPage({super.key});

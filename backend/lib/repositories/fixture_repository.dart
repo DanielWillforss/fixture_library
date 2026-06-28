@@ -1,15 +1,14 @@
 // lib/repositories/fixture_repository.dart
 
-import 'package:lightsapp_backend/database/database.dart';
-import 'package:lightsapp_backend/database/database_connection.dart';
-import 'package:lightsapp_backend/models/fixture.dart';
-import 'package:lightsapp_backend/models/mode.dart';
-import 'package:lightsapp_backend/models/channel.dart';
+import 'package:app_core/database/database.dart';
+import 'package:app_core/models/channel.dart';
+import 'package:app_core/models/fixture.dart';
+import 'package:app_core/models/mode.dart';
 import 'package:postgres/postgres.dart';
 
 class FixtureRepository {
   final Database db;
-  FixtureRepository({Database? db}) : db = db ?? DatabaseConnection();
+  FixtureRepository() : db = Database.instance;
 
   // Gets all fixtures, with well compiled list of modes and channels
   Future<List<Fixture>> getAllFixtures() async {

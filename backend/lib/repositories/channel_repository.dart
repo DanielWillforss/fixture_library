@@ -1,11 +1,10 @@
-import 'package:lightsapp_backend/database/database.dart';
-import 'package:lightsapp_backend/database/database_connection.dart';
+import 'package:app_core/database/database.dart';
 import 'package:postgres/postgres.dart';
 
 class ChannelRepository {
   final Database db;
 
-  ChannelRepository({Database? db}) : db = db ?? DatabaseConnection();
+  ChannelRepository() : db = Database.instance;
 
   // channel
   Future<int> createChannel(

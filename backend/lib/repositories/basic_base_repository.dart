@@ -1,26 +1,26 @@
 // lib/repositories/base_repository.dart
 
-import 'package:lightsapp_backend/database/database.dart';
-import 'package:lightsapp_backend/database/database_connection.dart';
+import 'package:app_core/database/database.dart';
+
 import 'package:postgres/postgres.dart';
 
 class FixtureTypeRepository extends BasicBaseRepository {
-  FixtureTypeRepository({super.db})
+  FixtureTypeRepository()
     : super(table: 'fixture_type', schema: 'fixture_library');
 }
 
 class ManufacturerRepository extends BasicBaseRepository {
-  ManufacturerRepository({super.db})
+  ManufacturerRepository()
     : super(table: 'manufacturer', schema: 'fixture_library');
 }
 
 class PowerConnectorRepository extends BasicBaseRepository {
-  PowerConnectorRepository({super.db})
+  PowerConnectorRepository()
     : super(table: 'power_connector', schema: 'fixture_library');
 }
 
 class ChannelContentRepository extends BasicBaseRepository {
-  ChannelContentRepository({super.db})
+  ChannelContentRepository()
     : super(table: 'channel_content', schema: 'fixture_library');
 }
 
@@ -29,8 +29,8 @@ abstract class BasicBaseRepository {
   final String schema;
   final Database db;
 
-  BasicBaseRepository({required this.table, required this.schema, Database? db})
-    : db = db ?? DatabaseConnection();
+  BasicBaseRepository({required this.table, required this.schema})
+    : db = Database.instance;
 
   Future<Map<int, String>> getAll() async {
     final result = await db.execute(
