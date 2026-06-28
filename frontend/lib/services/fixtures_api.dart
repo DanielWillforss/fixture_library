@@ -8,6 +8,7 @@ class FixturesApi {
   static const String baseUrl = GlobalConstants.baseUrl;
 
   static Future<List<Fixture>> getAllFixtures() async {
+    print('$baseUrl/fixtures/');
     final response = await http.get(Uri.parse('$baseUrl/fixtures/'));
     if (response.statusCode != 200) {
       throw Exception('Failed to load fixtures');

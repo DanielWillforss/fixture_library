@@ -7,8 +7,8 @@ void main() {
 }
 
 class GlobalConstants {
-  //static const String baseUrl = 'https://danielwillforss.site/work_app';
-  static const String baseUrl = 'http://localhost:8080';
+  static const String baseUrl = 'https://danielwillforss.site/fixture_library';
+  //static const String baseUrl = 'http://localhost:8080';
   static const String version = '1.1.0';
 }
 
