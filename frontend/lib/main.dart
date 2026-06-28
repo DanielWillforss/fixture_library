@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Fixtures',
-      theme: RedTheme().appTheme,
+      theme: RedTheme.appTheme,
       color: const Color(0xFF121212),
       home: FixturesPage(),
     );
