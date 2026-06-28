@@ -22,7 +22,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: c349761af21fdc4f9e262404ba6fea79aa559429
+      resolved-ref: "26a8a39bb7a64d0ff7641894b594cf8e0eb2abd6"
       url: "https://github.com/DanielWillforss/app_core.git"
     source: git
     version: "1.0.0"
