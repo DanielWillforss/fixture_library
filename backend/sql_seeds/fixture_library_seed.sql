@@ -27,29 +27,29 @@ VALUES
 
 INSERT INTO fixture_library.fixture (manufacturer_id, fixture_type_id, name, power_usage_watt, power_connector_id, has_power_link) VALUES 
 (
-    '9', '3', 'Thunder Wash 600 RGBW', '160', '8', TRUE
+    '5', '2', 'Thunder Wash 600 RGBW', '160', '5', TRUE
 ),
 (
-    '10', '3', '19pcs 15w LED Wash Zoom', '230', '8', TRUE
+    '6', '2', '19pcs 15w LED Wash Zoom', '230', '5', TRUE
 ),
 (
-    '11', '3', 'Vizi Beam CMY', '400', '7', TRUE
+    '7', '2', 'Vizi Beam CMY', '400', '4', TRUE
 ),
 (
-    '11', '3', 'Inno Color Beam Z7', '230', '9', TRUE
+    '7', '2', 'Inno Color Beam Z7', '230', '6', TRUE
 ),
 (
-    '12', '3', 'Atomic 3000', '650', '7', TRUE
+    '8', '2', 'Atomic 3000', '650', '4', TRUE
 ),
 (
-    '10', '3', 'LED Par 18x18 IP', '230', '7', TRUE
+    '6', '2', 'LED Par 18x18 IP', '230', '4', TRUE
 ),
 (
-    '10', '3', '250W Beam Moving Head Light', '250', '8', TRUE
+    '6', '2', '250W Beam Moving Head Light', '250', '5', TRUE
 ),
 (
-    '9', '3', 'CL PixBar 600 Pro', '300', '8', TRUE
+    '5', '2', 'CL PixBar 600 Pro', '300', '5', TRUE
 ),
 (
-    '10', '3', '200W LED Spotlight', '210', '8', TRUE
+    '6', '2', '200W LED Spotlight', '210', '5', TRUE
 );
