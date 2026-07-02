@@ -5,9 +5,8 @@ import 'package:shelf/shelf.dart';
 import 'package:shelf/shelf_io.dart' as io;
 import 'package:shelf_cors_headers/shelf_cors_headers.dart';
 
-Future<void> main(List<String> args) async {
-  final port = args.isNotEmpty ? int.parse(args[0]) : 6000;
-
+Future<void> main() async {
+  
   Database.init(
     Endpoint(
       host: 'localhost',
@@ -25,7 +24,6 @@ Future<void> main(List<String> args) async {
       .addMiddleware(corsHeaders())
       .addHandler(router.call);
 
-  //final server = await io.serve(handler, '127.0.0.1', 6000);
-  final server = await io.serve(handler, '127.0.0.1', port);
+  final server = await io.serve(handler, '127.0.0.1', 6000);
   print('Server running on http://${server.address.host}:${server.port}');
 }
